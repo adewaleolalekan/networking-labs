@@ -1,0 +1,46 @@
+{
+  "title": "Lab 1: CIDR Calculator Practice",
+  "description": "Learn IP subnetting and CIDR notation through hands-on exercises",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Understanding CIDR Notation",
+        "text": "step1/text.md",
+        "background": "step1/background.sh",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Calculate 192.168.1.0/24",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Calculate 10.10.10.0/26",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Kubernetes Pod Network Challenge",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {"file": "setup.sh", "target": "/usr/local/bin/", "chmod": "+x"}
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu:2204"
+  },
+  "interface": {
+    "layout": "terminal"
+  }
+}
