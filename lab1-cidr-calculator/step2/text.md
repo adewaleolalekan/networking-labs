@@ -40,10 +40,10 @@ usable_hosts=
 ### Example (do not copy blindly—verify your values)
 ```bash
 cat > /root/lab1/step2-answers.txt << 'EOF'
-network_address=192.168.1.0
-broadcast_address=192.168.1.255
-first_usable=192.168.1.1
-last_usable=192.168.1.254
+network_address=192.168.0.0
+broadcast_address=192.168.0.255
+first_usable=192.168.0.1
+last_usable=192.168.0.254
 usable_hosts=254
 EOF
 ```

@@ -42,9 +42,9 @@ total_addresses=
 **Example file creation:**
 ```bash
 cat > /root/lab1/step1-answers.txt << EOF
-network_bits=24
-host_bits=8
-total_addresses=256
+network_bits=16
+host_bits=24
+total_addresses=1024
 EOF
 ```
 
