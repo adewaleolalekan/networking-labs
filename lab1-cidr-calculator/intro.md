@@ -1,6 +1,6 @@
 # Welcome to CIDR Calculator Practice! 🌐
 
-## This lab was developed by Adewale Olalekan
+### Developed by Adewale Olalekan
 
 In this lab, you'll master IP subnetting and CIDR notation - essential skills for networking and Kubernetes.
 
