@@ -9,7 +9,6 @@ if [ ! -f /root/lab1/step4-pod-answers.txt ]; then
 else
     source /root/lab1/step4-pod-answers.txt
     
-    # /16 has 2^16 = 65536 addresses, minus 2 = 65534
     if [ "$total_pod_ips" != "65534" ]; then
         echo "❌ total_pod_ips incorrect. Expected: 65534"
         echo "   Hint: /16 means 16 host bits, so 2^16 - 2"
@@ -64,7 +63,6 @@ if [ ! -f /root/lab1/step4-service-answers.txt ]; then
 else
     source /root/lab1/step4-service-answers.txt
     
-    # /12 has 2^20 = 1048576 addresses, minus 2 = 1048574
     if [ "$total_service_ips" != "1048576" ]; then
         echo "❌ total_service_ips incorrect. Expected: 1048576"
         echo "   Hint: /12 means 20 host bits (32-12), so 2^20"
