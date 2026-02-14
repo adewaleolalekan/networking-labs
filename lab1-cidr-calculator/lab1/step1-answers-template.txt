@@ -1,0 +1,6 @@
+# Template for Step 1 answers
+# Fill in the values, then save as: /root/lab1/step1-answers.txt
+
+network_bits=
+host_bits=
+total_addresses=

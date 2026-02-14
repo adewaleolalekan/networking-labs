@@ -1,0 +1,5 @@
+# Template for Step 4B (Per-node capacity) answers
+# Fill in the values, then save as: /root/lab1/step4-node-answers.txt
+
+pods_per_node=
+max_nodes=

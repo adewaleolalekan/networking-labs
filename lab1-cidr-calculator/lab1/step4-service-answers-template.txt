@@ -1,0 +1,5 @@
+# Template for Step 4C (Service subnet) answers
+# Fill in the values, then save as: /root/lab1/step4-service-answers.txt
+
+total_service_ips=
+max_services=

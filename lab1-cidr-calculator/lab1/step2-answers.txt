@@ -1,5 +1,0 @@
-network_address=192.168.1.0
-broadcast_address=192.168.1.255
-first_usable=192.168.1.1
-last_usable=192.168.1.254
-usable_hosts=254

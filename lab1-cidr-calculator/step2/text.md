@@ -1,52 +1,59 @@
-#!/bin/bash
+# Step 2: Calculate **192.168.1.0/24**
 
-# Wait for setup to complete
-while [ ! -f /tmp/setup-complete ]; do
-    sleep 1
-done
+Now that you understand CIDR notation, let’s calculate the key values for this subnet:
 
-# Check if answer file exists
-if [ ! -f /root/lab1/step1-answers.txt ]; then
-    echo "❌ File not found: /root/lab1/step1-answers.txt"
-    echo "Please create the file with your answers."
-    exit 1
-fi
+**CIDR:** `192.168.1.0/24`
 
-# Source the answers
-source /root/lab1/step1-answers.txt
+## What to Calculate
 
-# Validate each answer
-errors=0
+For this `/24` network, determine:
 
-if [ "$network_bits" != "24" ]; then
-    echo "❌ network_bits is incorrect. Expected: 24, Got: $network_bits"
-    errors=$((errors + 1))
-else
-    echo "✓ network_bits is correct (24)"
-fi
+- Network address  
+- Broadcast address  
+- First usable host IP  
+- Last usable host IP  
+- Number of usable hosts  
 
-if [ "$host_bits" != "8" ]; then
-    echo "❌ host_bits is incorrect. Expected: 8, Got: $host_bits"
-    errors=$((errors + 1))
-else
-    echo "✓ host_bits is correct (8)"
-fi
+## Use the Tools
 
-if [ "$total_addresses" != "256" ]; then
-    echo "❌ total_addresses is incorrect. Expected: 256, Got: $total_addresses"
-    errors=$((errors + 1))
-else
-    echo "✓ total_addresses is correct (256)"
-fi
+Run:
+```bash
+ipcalc 192.168.1.0/24
+# or
+sipcalc 192.168.1.0/24
+```
 
-# Final result
-if [ $errors -eq 0 ]; then
-    echo ""
-    echo "🎉 All answers correct! Proceeding to next step..."
-    exit 0
-else
-    echo ""
-    echo "⚠️  Found $errors error(s). Please review and try again."
-    echo "Hint: Use 'ipcalc 192.168.1.0/24' to check your calculations"
-    exit 1
-fi
+## Your Task
+
+Create the file: `/root/lab1/step2-answers.txt`
+
+It must contain these variables (exact names):
+
+```
+network_address=
+broadcast_address=
+first_usable=
+last_usable=
+usable_hosts=
+```
+
+### Example (do not copy blindly—verify your values)
+```bash
+cat > /root/lab1/step2-answers.txt << 'EOF'
+network_address=192.168.1.0
+broadcast_address=192.168.1.255
+first_usable=192.168.1.1
+last_usable=192.168.1.254
+usable_hosts=254
+EOF
+```
+
+## Quick Hints
+
+- `/24` → host bits = 8 → total addresses = 2^8 = 256  
+- Usable hosts = total - 2 (network + broadcast)  
+- For a `.0/24` network:
+  - Network ends in `.0`
+  - Broadcast ends in `.255`
+
+Click **Check** when ready.

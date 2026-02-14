@@ -1,0 +1,6 @@
+# Template for Step 4A (Pod subnet) answers
+# Fill in the values, then save as: /root/lab1/step4-pod-answers.txt
+
+total_pod_ips=
+first_pod_ip=
+last_pod_ip=

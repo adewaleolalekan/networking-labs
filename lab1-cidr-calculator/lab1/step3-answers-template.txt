@@ -1,0 +1,10 @@
+# Template for Step 3 answers
+# Fill in the values, then save as: /root/lab1/step3-answers.txt
+
+host_bits=
+total_addresses=
+network_address=
+broadcast_address=
+first_usable=
+last_usable=
+usable_hosts=
