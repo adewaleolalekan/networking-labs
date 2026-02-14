@@ -1,4 +1,4 @@
-# Welcome to CIDR Calculator Practice! 🌐
+# Welcome to CIDR Calculator Practice!
 
 - Developed by Adewale Olalekan
 
